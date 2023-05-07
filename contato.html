@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Gusthavo Soares">
+    <meta name="description" content="Adquira os melhores sites com os design mais modernos!">
+    <meta name="keywords" content="programação,front-end,desenvolvimento-web,PHP,HTML,CSS,JS,Gusthavo Soares">
+    <link rel='icon' type='image/svg' href='img/user.svg'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Sygmas</title>
+</head>
+<body>
+    <header>
+        <div class="center flex">
+        <div class="w50">
+            <h1><a href="index.html" class="title">Sygmas</a></h1>
+        </div><!--w50-->
+        <nav class="w50 menuDesktop">
+           
+            <ul>
+                <li><a href="index.html">Home</a></li>                
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="contato.html" class="selected">Contato</a></li>
+            </ul>
+        </nav><!--w50-->
+        <nav class="w50 menuMobile">
+            <i class="fa-solid fa-bars icon" id="#menu"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav><!--w50-->
+    </div><!--center-->
+    </header>
+
+    <section class="parallaxBanner">
+        <div class="center">
+            <div class="shadow"></div>
+            
+            <div class="paralaxImg" id="banner3">
+            </div>
+            <h2 class="title">Contato</h2>
+            <div class="textBanner">
+            <p class="text">Preencha o formulário e receba o seu <b class="contentText">site</b> com a melhor programação do mercado!</p>
+            
+        </div><!--textBanner-->
+        <div class="btnCta">
+            <a class="btn1" href="index.html">Sobre nós</a>
+            <a class="btn2" href="trabalhos.html">Nossos trabalhos</a>
+            </div>
+        </div><!--center-->
+    </section><!--parallaxBanner-->
+    <section class="form">
+        <form method="post">
+            <div class="center">
+                <fieldset name="grupo">
+                    <legend>Cadastro</legend>
+                
+                <input type="text" name="nome" placeholder="Insira o seu nome" required id="name">
+                <input type="email" name="email" placeholder="Insira o seu e-mail" required id="mail">
+                <input type="tel" name="telefone" id="phone" required pattern="[0-9]{2}()[0-9]{5}-[0-9]{4}" placeholder="(99)99999-9999">
+                <div class="options">
+                <div class="flexOption">
+                <input type="radio" name="plano" value="landingPage" required>
+           
+                <label for="landingPage">Landing Page</label>
+            </div><!--flexOption-->
+                    <div class="flexOption">
+                <input type="radio" name="plano" value="website" required>
+                <label for="webSite">Website</label>
+                    </div><!--flexOption-->
+                    <div class="flexOption">
+                         <input type="radio" name="plano" value="siteExecutivo" required>
+                        <label for="siteExecutivo">Site executivo</label>
+                    </div><!--flexOption-->
+            </div><!--options-->
+                <textarea placeholder="Insira sua mensagem" required  id="mensagem"></textarea>
+                <p class="advice" id="info"></p>
+                <input type="submit" value="Enviar" name="acao">
+                </fieldset>
+            </div><!--center-->
+        </form>
+    </section>
+    <footer>
+        <div class="center">
+            <div class="flex">
+         <div class=w25>
+            <a href="https://github.com/GusthavoSoares"><i class="fa-brands fa-github-alt"></i>
+            Github
+        </a>
+         </div> <!--w25--> 
+         <div class=w25>
+            <a href="mailto:sygmascontato@gmail.com.br?subject=Entrar em contato"><i class="fa-solid fa-envelopes-bulk"></i>
+            E-mail</a>
+         </div> <!--w25--> 
+         <div class=w25>
+            <a href="https://www.linkedin.com/in/gusthavo-soares-74b5a4224/"><i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn</a>
+         </div> <!--w25--> 
+         <div class=w25>
+            <a href="https://wa.me/51993419188"><i class="fa-solid fa-phone-volume"></i>
+            Telefone</a>
+         </div> <!--w25--> 
+         <div class="w100 line"></div>    
+         <div class="w100">
+            <p>Todos os direitos reservados a Sygmas</p>
+         </div>
+        </div><!--center-->
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/df85906e6a.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>

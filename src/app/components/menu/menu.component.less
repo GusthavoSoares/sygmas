@@ -1,0 +1,39 @@
+@import '../../../styles.less';
+
+.menu {
+  display: flex;
+  background: @corPrimaria;
+  padding: 1%;
+  align-items: center;
+  justify-content: space-between;
+
+  &-logo>a {
+    font-size: @tamanhoFonteMedia * 1.1;
+    color: @corSecundaria;
+    font-family: @fonteTitulo;
+
+    &:hover {
+      transition: 1s;
+      color: @corDestaque;
+    }
+  }
+
+  &-links {
+    display: flex;
+    gap: 4%;
+    width: 50%;
+    justify-content: right;
+
+    font-size: @tamanhoFontePequena;
+
+    a {
+      color: @corTercearia;
+
+      &:hover {
+        transition: 1s;
+        color: @corSecundaria;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
